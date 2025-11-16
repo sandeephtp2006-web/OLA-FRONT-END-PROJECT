@@ -1,2 +1,788 @@
 # OLA-FRONT-END-PROJECT
 A fully designed OLA-themed web page built using HTML and CSS. Includes navigation, hero section, scooter and motorcycle showcases, service details, EMI planner, and multiple image sections. Uses custom styling and layout to recreate a modern OLA website experience.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLA </title>
+    <style>
+        nav{
+            background-color: black;
+            color: white;
+        }
+        nav ul{
+            display: flex;
+            padding: 0%;
+            margin: 0;
+            list-style: none;
+        }
+        nav ul li a:hover{
+            color: lightgrey;
+        }
+        nav{
+            padding: 20px;
+            background-color: black;
+        }
+        nav ul li{
+            margin-right: 10px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+        
+        body{
+            margin: 0;
+            border-radius: 10%;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        nav ul {
+             padding: 15px;
+             display: flex;
+             margin: 0%;
+             list-style: none;
+           margin-left: 30px;
+           align-items: center; justify-content: space-between;
+          
+        }
+        nav ul li{
+            font-size: large;
+            font-weight: 800;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    ;
+           font-size: xx-large;
+            align-self: stretch;
+           
+            
+
+            
+        }
+       
+        .order{
+            color: lightgreen;
+            font-size: large;
+        }
+        .a{
+            height: 5px;
+            width: 50px;
+            background-color: white;
+            position: absolute;
+            top: 25px;
+            right: 15px;
+        }
+        .b{
+            height: 5px;
+            width: 50px;
+            background-color: white;
+            position: absolute;
+            top: 35px;
+            right: 15px;
+        }
+        .c{
+            height: 5px;
+            width: 50px;
+            background-color: white;
+            position: absolute;
+            top: 45px;
+            right: 15px;
+        }
+        .aa{
+            color: black;
+            text-align: center;
+            
+            font-size: 75px;
+            font-style: normal;
+            
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .img1{
+            position: absolute;
+            left: 30%;
+            top: 280px;
+            
+        }
+        .img2{
+            width: 100%;
+            height: 650px;
+        }
+        .d{
+            background-color: black;
+            color: white;
+            height: 65px;
+            width: 300px;
+            position: absolute;
+            top: 340px;
+            left: 700px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: solid;
+            
+            
+        }
+        .e{
+            background-color: white;
+            color: black;
+            height: 65px;
+            width: 300px;
+            position: absolute;
+            top: 340px;
+            left: 1000px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: none;
+        }
+        .h2{
+            font-family: sans-serif;
+            font-size: 85px;
+            position: absolute;
+            top: 1050px;
+            left: 110px;
+            text-decoration: solid;
+        }
+        .red{
+            height: 500px;
+            width: 28%;
+            box-shadow: 25px;
+            position: absolute;
+            top: 82em;
+            left: 100px;
+        }
+        .grey{
+                        height: 500px;
+            width: 28%;
+            box-shadow: 25px;
+            position: absolute;
+            top: 82em;
+            left: 710px;
+
+        }
+        .blue{
+                        height: 500px;
+            width: 28%;
+            box-shadow: 25px;
+            position: absolute;
+            top: 82em;
+            right: 100px;
+        
+        }
+        
+        .ola{
+            height: 50px;
+            width: 150px;
+            color: black;
+            position: absolute;
+            top: 115em;
+            left: 150px;
+            
+        }
+        .b1{
+            height: 700px;
+            width: 28%;
+            position: absolute;
+            top: 111em;
+            left: 100px;
+            background-color: lavender;
+            box-shadow: black;
+            border-bottom-left-radius: 3%;
+            border-bottom-right-radius: 3%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            
+
+        }
+        .b2{
+            height: 700px;
+            width: 28%;
+            position: absolute;
+            top: 111em;
+            left: 705px;
+            background-color: lavender;
+             border-bottom-left-radius: 3%;
+            border-bottom-right-radius: 3%;
+
+        }
+        .b3{
+            height: 700px;
+            width: 28%;
+            position: absolute;
+            top: 111em;
+            right: 100px;
+            background-color: lavender;
+             border-bottom-left-radius: 3%;
+            border-bottom-right-radius: 3%;
+
+        }
+        .bb1{
+            height: 25px;
+            width: 60px;
+
+        }
+        .bb1{
+            background-color: black;
+            color: white;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 72em;
+            left: 140px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: solid;
+        }
+        .bb2{
+            background-color: white;
+            color: black;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 75em;
+            left: 140px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: none;
+        }
+        .cc1{
+             background-color: black;
+            color: white;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 72em;
+            left: 750px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: solid;
+
+        }
+        .cc2{
+             background-color: white;
+            color: black;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 75em;
+            left: 750px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: none;
+        }
+        .dd1{
+             background-color: black;
+            color: white;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 72em;
+            right: 140px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: solid;
+        }
+        .dd2{
+               background-color: white;
+            color: black;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 75em;
+            right: 140px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: none;
+        }
+        h2{
+            font-family: sans-serif;
+            font-size: 85px;
+            position: absolute;
+            top: 30em;
+            left: 110px;
+            text-decoration: solid;
+            
+        
+        }
+        .RSX{
+            height: 500px;
+            width: 28%;
+            box-shadow: 25px;
+            position: absolute;
+            top: 170em;
+            left: 100px;
+            border-top-left-radius: 3%;
+            border-bottom-right-radius: 3%;
+        }
+        .mid{
+             height: 500px;
+            width: 28%;
+            box-shadow: 25px;
+            position: absolute;
+            top: 170em;
+            left: 705px;
+             border-top-left-radius: 3%;
+            border-bottom-right-radius: 3%;
+        }
+        .RS{
+                        height: 500px;
+            width: 28%;
+            box-shadow: 25px;
+            position: absolute;
+            top: 170em;
+            right: 100px;
+             border-top-left-radius: 3%;
+            border-bottom-right-radius: 3%;
+        
+        }
+         .bike4{
+            height: 700px;
+            width: 28%;
+            position: absolute;
+            top: 190em;
+            left: 100px;
+            background-color: lavender;
+            box-shadow: black;
+            border-bottom-left-radius: 3%;
+            border-bottom-right-radius: 3%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            
+
+        }
+        .bike5{
+            height: 700px;
+            width: 28%;
+            position: absolute;
+            top: 190em;
+            left: 705px;
+            background-color: lavender;
+             border-bottom-left-radius: 3%;
+            border-bottom-right-radius: 3%;
+
+        }
+        .bike6{
+            height: 700px;
+            width: 28%;
+            position: absolute;
+            top: 190em;
+            right: 100px;
+            background-color: lavender;
+             border-bottom-left-radius: 3%;
+            border-bottom-right-radius: 3%;
+
+        }
+        .ee1{
+            background-color: black;
+            color: white;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 111em;
+            left: 140px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: solid;
+        }
+        .ee2{
+            background-color: white;
+            color: black;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 114em;
+            left: 140px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: none;
+        }
+        .ff1{
+             background-color: black;
+            color: white;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 111em;
+            left: 750px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: solid;
+
+        }
+        .ff2{
+             background-color: white;
+            color: black;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 114em;
+            left: 750px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: none;
+        }
+        .gg1{
+             background-color: black;
+            color: white;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 111em;
+            right: 140px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: solid;
+        }
+        .gg2{
+               background-color: white;
+            color: black;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 114em;
+            right: 140px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: none;
+
+        }
+        
+        .service{
+            font-family: sans-serif;
+            font-size: 85px;
+            position: absolute;
+            top: 46em;
+            left: 110px;
+            text-decoration: solid;
+
+             
+        }
+        .hyper{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 60px;
+            position: absolute;
+            top: 67em;
+            left: 110px;
+            text-decoration: solid;
+        }
+        .se1{
+            height: 450px;
+            width: 30%;
+            position: absolute;
+            top: 265em;
+            left: 100px;
+
+        }
+        .se2{
+            height: 450px;
+            width: 30%;
+            position: absolute;
+            top: 265em;
+            left: 710px;
+        }
+        .se3{
+            height: 450px;
+            width: 30%;
+            position: absolute;
+            top: 265em;
+            right: 100px;
+        }
+        .serv1{
+            color: black;
+            font-size: larger;
+            position: absolute;
+            top: 117em;
+            left: 100px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 40px;
+
+        }
+        .serv2{
+             color: black;
+            font-size: larger;
+            position: absolute;
+            top: 117em;
+            left:700px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 40px;
+
+        }
+        .serv3{
+             color: black;
+            font-size: larger;
+            position: absolute;
+            top: 117em;
+            right: 60px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 40px;
+
+        }
+        .serv11{
+            color: black;
+            font-size: larger;
+            position: absolute;
+            top: 190em;
+            left: 100px;
+            font-family:  Courier, monospace;
+            
+            font-size: 25px;
+
+        }
+        .serv22{color: black;
+            font-size: larger;
+            position: absolute;
+            top: 190em;
+            left: 700px;
+            font-family:  Courier, monospace;
+            
+            font-size: 25px;
+
+        }
+        .serv33{
+          color: black;
+            font-size: larger;
+            position: absolute;
+            top: 190em;
+            right: 60px;
+            font-family:  Courier, monospace;
+            
+            font-size: 25px;
+        }
+        .exp{
+            background-color: black;
+            color: white;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 155em;
+            left: 750px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: solid;
+        }
+        .last{
+            color: black;
+            font-size: larger;
+            position: absolute;
+            top: 205em;
+            text-align: center;
+            font-family:  Courier, monospace;
+            
+            font-size: 25px;
+
+        }
+        .emi{
+             font-family: sans-serif;
+            font-size: 85px;
+            position: absolute;
+            top: 63em;
+            left: 110px;
+            text-decoration: solid;
+
+
+        }
+        .emi1{
+            color: black;
+            font-size: larger;
+            position: absolute;
+            top: 140em;
+            left: 100px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 40px;
+
+        }
+        .emo{
+            height: 150px;
+            width: 80%;
+            position: absolute;
+            top: 360em;
+            left: 150px;
+
+        }
+        .cal{
+             background-color: black;
+            color: white;
+            height: 75px;
+            width: 480px;
+            position: absolute;
+            top: 190em;
+            left: 140px;
+            text-align: center;
+            font-size: xx-large;
+            font-style: oblique;
+            text-decoration: solid;
+
+        }
+
+        .re{
+            position: absolute;
+            height: 300px;
+            width: 450px;
+            top: 120em;
+            left: 130px;
+        }
+        .gr{
+             position: absolute;
+            height: 300px;
+            width: 450px;
+            top: 120em;
+            left: 750px;
+
+        }
+        .bl{
+             position: absolute;
+            height: 300px;
+            width: 450px;
+            top: 120em;
+            right: 140px;
+        }
+        .roo1{
+            position: absolute;
+            height: 280px;
+            width: 450px;
+            top: 203em;
+            left: 130px;
+
+
+        }
+        .roo2{
+            position: absolute;
+            height: 280px;
+            width: 450px;
+            top: 203em;
+            left: 750px;
+
+
+        }
+        .roo3{
+            position: absolute;
+            height: 280px;
+            width: 450px;
+            top: 203em;
+            right: 140px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav><ul>
+        <li> OLA    </li> 
+</ul>
+<ul>
+        <li><a href="./SCOOTERS.html"> SCOOTERS</a></li>
+        <br>
+        <li><a href="./MOTORCYCLES.html" >MOTORCYCLES</a> </li>
+        <br>
+    <li><a href="./INVESTOR RELATIONS.html">INVESTOR RELATIONS</a></li>  
+    <li><a href="./TEST RIDE.html">TEST RIDE</a></li> 
+    <li><SPan class="order"></SPan><a href="./Order Now.html" class="order" ></SPan>Order Now </a></li>
+     
+        <a href="./TEST RIDE.html"></a>
+    
+    </ul>
+ </nav>
+ <p class="a"></p>
+ <p class="b"></p>
+ <p class="c"></p>
+  <p class="aa">OLA CELEBRATES INDIA  </p>
+  <img src="./h1 2nd.png" alt="h2" class="img1" >
+  <a href="./TEST RIDE.html" class="d">Book Test Ride -></a>
+  <img src="./1 bike.png" alt="bike" class="img2" >
+  <a href="./explore.html" class="e">Book Test Ride -></a>
+
+  <p class="h2">Introducing Ola S1 3rd Gen portfolio</p>
+
+  <p class="bike1"></p>
+  <p class="bike2"></p>
+  <p class="bike3"></p>
+<img src="./red bike.png" alt="red ola" class="red">
+<img src="./grey.png" alt="grey ola" class="grey">
+<img src="./blue.png" alt="blue ola" class="blue">
+<img src="./Screenshot 2025-10-12 075613.png" alt="ola" class="ola">
+
+<p class="b1"></p>
+
+<p class="b2"></p>
+<p class="b3"></p>
+<a href="./explore s1 pro+.html" class="bb1"> Explore S1 Pro + -></a>
+<a href="./buynow.html" class="bb2"> Buy Now -> </a>
+<a href="./explore s1 pro.html" class="cc1"> Explore S1 Pro -></a>
+<a href="./buynow.html" class="cc2"> Buy Now -></a>
+<a href="./explore s1x+.html" class="dd1">Explore S1 X + -></a>
+<a href="./buynow.html" class="dd2">Buy Now -></a>
+
+<h2>The future of motorcycling is here</h2>
+<p class="bike4"></p>
+  <p class="bike5"></p>
+  <p class="bike6"></p>
+<img src="./ROADSTER X.png" alt="RS X" class="RSX">
+<img src="./mid img.png" alt=" mid" class="mid">
+<img src="./ROADSTER.png" alt="RS" class="RS">
+
+
+<a href="./explore s1 pro+.html" class="ee1"> Explore Roadster x  -></a>
+<a href="./buynow.html" class="ee2"> Book Now -> </a>
+<a href="./explore s1 pro.html" class="ff1"> Explore Roadster x+ -></a>
+<a href="./buynow.html" class="ff2"> Book Now -></a>
+<a href="./explore s1x+.html" class="gg1">Explore Roadster -></a>
+<a href="./buynow.html" class="gg2">Reserve for 999 -></a>
+
+<h2 class="service">Ola Service Centres Near You</h2>
+<h3 class="hyper">#HYPERSERVICE</h3>
+<img src="./service1.png" alt="service" class="se1">
+<img src="./service2.png" alt="service" class="se2">
+<img src="./service3.png" alt="service" class="se3">
+<h4 class="serv1">1000 Service Centers</h4>
+<p class="serv11"> 1 lakh third party mechanics <br>
+    to be EV - ready
+     </p>
+<h4 class="serv2">AI Power Centers </h4>
+<p class="serv22"> proactive maintenance alerts <br>
+ remote diagontics. </p>
+<h4 class="serv3"> Quick Service Guarantee</h4>
+<p class="serv33"> 1 day resoluation else get <br>
+ backup Ola S1 ola cabs coupons for <br>
+care+ subscribers</p>
+
+
+<a href="./explore s1 pro+.html" class="exp"> Explore Service Locations ->  </a>
+
+<p class="last">2x network by dec .3rd party mechanics by dec 2025 . quick service guarantee rolling out from 10th oct</p>
+
+<h2 class="emi">Plan Your Ride with <br>
+     Easy EMIs</h2>
+<p class="emi1">Use our EMI Calculator to estimate your monthly payments <br>and find the right Ola vehicle for your budget</p>
+
+<img src="./emi.png" alt="emi" class="emo">
+
+<a href="./explore s1 pro+.html" class="cal"> Calculate Your EMI   -></a>
+
+<img src="./red1.png" alt="red" class="re">
+<img src="./gry2.png" alt="gr" class="gr">
+<img src="./blu 3.png" alt="bl" class="bl">
+
+<img src="./ro1.png" alt="ro" class="roo1">
+<img src="./ro2.png" alt="ro" class="roo2">
+<img src="./ro3.png" alt="ro" class="roo3">
+
+</body>
+</html>
