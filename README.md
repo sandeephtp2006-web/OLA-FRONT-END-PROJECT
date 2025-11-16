@@ -3,8 +3,8 @@ A fully designed OLA-themed web page built using HTML and CSS. Includes navigati
 This project is a front-end clone of the OLA Electric website, created using HTML and CSS only.
 It includes multiple sections such as scooters, motorcycles, service centers, EMI calculator, and more — designed to mimic the structure and style of the official OLA webpage.
 
-🚀 Features
-✅ Navigation Bar
+ Features
+ Navigation Bar
 
 Clean black header with navigation links
 
@@ -12,7 +12,7 @@ Clean black header with navigation links
 
 Mobile hamburger menu design (static)
 
-✅ Hero Section
+ Hero Section
 
 Large background image
 
@@ -20,19 +20,19 @@ Promotional text
 
 Buttons: Book Test Ride, Explore
 
-✅ Scooter Lineup Section
+ Scooter Lineup Section
 
 Displays images for different OLA S1 models
 
 Includes “Explore” and “Buy Now” buttons
 
-✅ Motorcycle Section
+ Motorcycle Section
 
 Showcases Roadster, Roadster X, and Roadster X+
 
 Dedicated explore and reserve buttons
 
-✅ Service Centres Section
+Service Centres Section
 
 #HyperService branding
 
@@ -40,13 +40,13 @@ Display of service-related images
 
 Key points like quick service guarantee, AI centers, etc.
 
-✅ EMI Calculator Promotion
+EMI Calculator Promotion
 
 Image + Call-to-action button
 
 Styled to match OLA branding
 
-🛠 Technology Used
+ Technology Used
 Technology	Purpose
 HTML5	Layout & structure
 CSS3	Styling, colors, spacing, and positioning
@@ -57,7 +57,7 @@ project-folder/
 ├── /images             # Folder containing all images
 └── README.md           # Project documentation
 
-⚠ Important Notes
+ Important Notes
 
 This project is static — no JavaScript is used.
 
@@ -65,7 +65,7 @@ Many elements are positioned using absolute positioning, meaning the layout may 
 
 Images must be placed in the same folder structure used in the HTML (update paths as needed).
 
-▶ How to Run
+ How to Run
 
 Download or clone the repository:
 
